@@ -31,14 +31,34 @@ sudo apt update
 # Install Maven ( Jenkin Pipline Project Need)
 sudo apt install -y maven
 
+# Update List | Ensure that your package list is up to date
+sudo apt update
+
+# Install Nginx | For Reverse Proxy
+sudo apt install -y nginx
+
+# Enable Nginx to Start on Boot
+sudo update-rc.d nginx defaults
+
+# Start Ngnix
+sudo service nginx start
+
+
 # Check Version
 mvn -version
 
 # Check Jenkins Version
 jenkins --version
 
-# Print initial admin password (for systems using Upstart)
-echo "Jenkins initial admin password:"
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+# Check Ngnix Version
+nginx -v
+
+# Ngnix on Link | If on Laptop or System | Not Tested for Cloud
+echo "Ngnix Link : http://localhost/"
+echo "Check Link"
+
+# Jenkins on Link  | If on Laptop or System | Not Tested for Cloud
+echo "Jenkin Link : http://localhost:8080/"
+echo "Check Link"
 
 # End of script
