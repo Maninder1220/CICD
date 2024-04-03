@@ -2,7 +2,7 @@
 pipeline{
     agent any
         stages{
-            stage("Git Checkout"){
+            stage("Lets Checkout"){
                 steps{
                     git branch: 'not-merged/main', url: 'https://github.com/Maninder1220/CICD.git'
                 }
