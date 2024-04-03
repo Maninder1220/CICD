@@ -1,3 +1,4 @@
+// this is basic test groovy file can have axis through SCM 
 
 pipeline{
     agent any
