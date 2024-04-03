@@ -25,6 +25,18 @@ sudo service jenkins start
 # Enable Jenkins service on boot (for systems using Upstart)
 sudo update-rc.d jenkins defaults
 
+# Update List | Ensure that your package list is up to date
+sudo apt update
+
+# Install Maven ( Jenkin Pipline Project Need)
+sudo apt install -y maven
+
+# Check Version
+mvn -version
+
+# Check Jenkins Version
+jenkins --version
+
 # Print initial admin password (for systems using Upstart)
 echo "Jenkins initial admin password:"
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
