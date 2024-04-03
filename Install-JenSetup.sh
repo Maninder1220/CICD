@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Update system
-sudo apt-get update
-sudo apt-get upgrade -y
+sudo apt update
+sudo apt upgrade -y
 
-# Install Java Development Kit (JDK)
-sudo apt-get install -y default-jdk
+# Install Java Development Kit (JDK) | Jenkins 2.452 uses Java 17 as the default Java version
+sudo apt install openjdk-17.0.3-jdk
 
 # Add Jenkins repository key
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
@@ -14,10 +14,10 @@ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key 
 sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 
 # Update package lists
-sudo apt-get update
+sudo apt update
 
 # Install Jenkins
-sudo apt-get install -y jenkins
+sudo apt install -y jenkins
 
 # Start Jenkins service (for systems using Upstart)
 sudo service jenkins start
