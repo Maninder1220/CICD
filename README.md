@@ -8,4 +8,7 @@ this is shared lib branch for reusability of Function
 Project Root
 - vars - Groovy Script with Reusable Function
 - src - function reused in this project
-- resource - Static Configuration Data
+- resource - Static Configuration Date
+
+# use it to import in groovy scrip
+Name of Shared Lib - SharedHere  
