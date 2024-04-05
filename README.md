@@ -12,3 +12,6 @@ if you have already everything install this will help to start your jenkins serv
 
 # Jenkins CLI
 use command ./JCL insted of java -jar jenkins-cli.jar -s http://localhost:8080/ help |  eg ./JCL Help | make sure u have jenkins-cli.jar in your repo
+
+# Jenkins Shared Library
+Jenkins shared library is on branch "jenkins-shared-lib" and its active and working.
